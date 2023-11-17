@@ -132,6 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         backgroundColor: rdAzul,
+        shape: const CircleBorder(),
         child: const Icon(Icons.add),
       ),
 
@@ -142,6 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
           tooltip: "decrement",
           backgroundColor: tdRed,
           hoverColor: rdAzul,
+          shape: const CircleBorder(),
           child: const Icon(Icons.remove),
         )
       ]
