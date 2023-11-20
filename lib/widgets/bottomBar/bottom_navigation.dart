@@ -7,11 +7,18 @@ class BottomNavigation extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return BottomNavigationBar(
+      backgroundColor: Colors.white,
+      selectedItemColor: Colors.green, // Set the color for the selected item
+      unselectedItemColor: Colors.grey,
       items: const [
          BottomNavigationBarItem(
-          icon: Icon(Icons.home),
+          icon: Icon(Icons.home, color: Colors.blue,),
           label: "home",
-          backgroundColor: Colors.blue
+          ),
+
+          BottomNavigationBarItem(
+          icon: Icon(Icons.people),
+          label: "perfil",
           ),
 
       ]);

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:openfrontapp/constants/colors.dart';
+import 'package:openfrontapp/screens/splash_screen.dart';
+import 'package:openfrontapp/widgets/bottomBar/bottom_navigation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 58, 183, 96)),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Bienvenido a openChange!'),
+      home: const SplashLoading()//const MyHomePage(title: 'Bienvenido a openChange!'),
     );
   }
 }
@@ -148,6 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
         )
       ]
       ), // This trailing comma makes auto-formatting nicer for build methods.
+      bottomNavigationBar: const BottomNavigation(),
     );
   }
 }
